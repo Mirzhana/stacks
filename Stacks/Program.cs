@@ -7,14 +7,15 @@ namespace SearchText
 {
     class Program
     {
-        //Check Prime numbers using stack
+       
         static void Main(string[] args)
         {
-            string path = "D:\\1 семестр\\Fundamentals"; //The root directory to check
+            string path = "D:\\a"; //The root directory to check
             Search(path); //Function that will be used(described bellow)
         }
         static void Search(String path)
         {
+            
             Stack<string> dirs = new Stack<string>(20);
             dirs.Push(path); //Put the directory into the stack
             while (dirs.Count > 0) //Until there are items in the stack do:
